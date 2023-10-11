@@ -83,16 +83,17 @@
 
 </head>
 
-<body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
 
+
+<body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
 
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
-      <a href="/" class="logo d-flex align-items-center me-auto me-xl-0">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="static\image\logo.png" alt="" style="mix-blend-mode: multiply;">
+        <img src="static/assets/img/logo.jpg" alt="" style="mix-blend-mode: multiply;">
 
         <span></span>
       </a>
@@ -100,37 +101,36 @@
       <!-- Nav Menu -->
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="home">Home</a></li>
+          <li><a href="home" class="active">Home</a></li>
           <li><a href="services">Services</a></li>
           <li><a href="/">Podcast</a></li>
-          <li><a href="cources">Cources</a></li>
+          <li><a href="cources">Courses</a></li>
           <li><a href="contact">Contact</a></li>
           <li><a href="about">About</a></li>
           <li><a href="career">Career</a></li>
-          <li>
-            <a href="/cart">Cart
-              <span class="badge bg-info text-dark">{{request.session.cart.keys|length}}</span>
-              <span class="sr-only">(current)</span></a>
-          </li>
-          {% if request.session.customer %}
-
-          <li>
-            <a href="/orders">Orders</a>
-          </li>
-
+          <li><a href="/cart">Cart<span class="badge bg-info text-dark">{{request.session.cart.keys|length}}</span>
+            <span class="sr-only">(current)</span></a></a></li>
+            
+            <li><a href="/orders">Orders</a></li>
         </ul>
 
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-      <a class="nav-item nav-link text-dark">
+      </nav><!-- End Nav Menu -->
+       {% if request.session.customer %}
+       <a class="  text-dark ">
         <i class=" fa fa-user" style="font-size:30px"></i> </a>
-      <!-- {{ customer.get_first_name }} -->
-      <a class="btn-getstarted" href="/logout">Logout </a>
-      {% else %}
-      <a class="btn-getstarted" href="/login">Login<span class="sr-only">(current)</span></a>
-      {% endif%}
+      <a class="btn-getstarted" href="logout">Logout </a>
+  {% else %}
+      <a class="btn-getstarted" href="/login">Log in </a>
+  {% endif %}
     </div>
-  </header>
+  </header><!-- End Header -->
+
+
+
+<!--   add content /////////////////////////////////////////////////////////////////////////-->
+
+
 
   {% block content %}{% endblock %}
 
@@ -171,7 +171,7 @@
             <span style="color:blue">In<span style="color:rgb(5, 5, 6)">ner</span> Upl<span
                 style="color:rgb(242, 0, 0)">ift</span></span>
           </a>
-          <p>UpliftNest: Your haven of inspiration and empowerment. Discover curated books and resources that
+          <p>INNER UPLIFT: Your haven of inspiration and empowerment. Discover curated books and resources that
             illuminate the path to inner growth. From anxiety to mindfulness, find solace, guidance, and tools for
             positive change. Join us in this journey of resilience, compassion, and connection.</p>
           <div class="social-links d-flex mt-4">

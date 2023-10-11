@@ -1,0 +1,492 @@
+{% extends 'base.html' %}
+{%   load static %}
+{% block content %}
+
+  <!-- Favicons -->
+  <link href="static\image\logo.png" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+ <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+
+  <!-- for the corousel  -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+   <link rel="stylesheet" type="text/css" href='/css.css'>
+  
+  
+  <!-- Bootstrap properties  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+  <!-- side-social media  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="static\assets\css\social-side-bar\side_social.css"> 
+<main id="main">
+
+    <!-- Hero Section - Home Page -->
+    <section id="hero" class="hero">
+
+  
+
+      <img src="https://img.freepik.com/free-photo/mature-doctor-coworker-confidently-standing-indoors-generated-by-ai_188544-14022.jpg" alt="" data-aos="fade-in" class="aos-init aos-animate">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10">
+            <h2 data-aos="fade-up" data-aos-delay="100" class="aos-init aos-animate">Patients tell me that nobody really listens to them, nobody
+              understands. Our team does listen, and we do truly understand. <span class="fs-4">-inner uplift</span>
+            </h2>
+            <p data-aos="fade-up" data-aos-delay="200">Healing Hearts: Your Journey to Overcoming Depression </p>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- End Hero Section -->
+
+    <!-- Clients Section - Home Page -->
+    <section id="clients" class="clients">
+
+      <div class="container-fluid aos-init aos-animate" data-aos="fade-up">
+<h2 class="text-center text-dark "> Strategic Alliances: Our Trusted Co-partners for Success </h2>
+        <div class="row gy-4">
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="static/assets/img/co-pantner/who.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="static/assets/img/co-pantner/springer.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="static/assets/img/co-pantner/elsevier-non-solus.svg" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="static/assets/img/co-pantner/inner light.jpeg" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="static/assets/img/co-pantner/logo.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="static/assets/img/co-pantner/10BFB6E5-7CB1-4309-B6DA-7FB4AFD5EC6A.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- End Clients Section -->
+
+    <!-- About Section - Home Page -->
+    <section id="about" class="about">
+
+      <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-xl-center gy-5">
+
+          <div class="col-xl-5 content">
+            <h3>Our Intro</h3>
+            <h2> "Navigating Mental Wellbeing: Understanding Anxiety, Depression, and Panic Disorders"</h2>
+            <p>At Inner Uplift, we're dedicated to shedding light on these challenges, offering empathy, understanding,
+              and effective tools for those seeking to conquer anxiety, depression, and panic disorders. Your journey to
+              mental wellbeing begins here.</p>
+            <a href="services" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <div class="col-xl-7">
+            <div class="row gy-4 icon-boxes">
+
+              <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon-box aos-init aos-animate" data-aos="fade-in" style="background-image: url('https://img.freepik.com/free-photo/composition-depression-mental-disorder_23-2150365120.jpg?size=626&amp;ext=jpg&amp;ga=GA1.2.1406591241.1684115342&amp;semt=ais');">
+                  <i class="bi bi-calendar2-event-fill"></i>
+                  <h3 class="text-light">Anxity</h3>
+                  <p class="text-light">Anxiety is a normal reaction to life’s many stressors, and everyone experiences it from time to
+                    time.</p>
+                </div>
+              </div> <!-- End Icon Box -->
+              
+              <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+               
+                  <div class="icon-box aos-init aos-animate" data-aos="fade-in" style="background-image: url('https://img.freepik.com/free-photo/sad-man-holding-head-with-hand_1150-6345.jpg?size=626&amp;ext=jpg&amp;ga=GA1.2.1406591241.1684115342&amp;semt=ais');">
+                    <i class="bi bi-clipboard-pulse"></i>
+                    <h3 class="text-light">Panic Disorder</h3>
+                    <p class="text-light">Panic disorder is a type of anxiety disorder that causes repeated panic attacks.</p>
+                  </div>
+                </div> <!-- End Icon Box -->
+
+              <div class="col-md-6 aos-init  aos-animate" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box aos-init aos-animate" data-aos="fade-in" style="background-image: url('https://img.freepik.com/free-photo/portrait-sad-person-with-depression-problems-living-room-sitting-floor-having-suicidal-thoughts-depressed-anxious-woman-pain-having-mental-health-difficulties_482257-42501.jpg?size=626&amp;ext=jpg&amp;ga=GA1.2.1406591241.1684115342&amp;semt=ais');">
+                  <i class="bi bi-command"></i>
+                  <h3 class="text-light">OCD</h3>
+                  <p class="text-light">Repeated thoughts and behaviors are a normal part of how we operate.However, if they are beyond
+                    control.</p>
+                </div>
+              </div> <!-- End Icon Box -->
+
+              <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
+                  <div class="icon-box aos-init aos-animate " data-aos="fade-in" style="background-image: url('https://img.freepik.com/free-photo/young-woman-enjoys-healthy-lunch-kitchen-generated-by-ai_24640-80386.jpg');">
+                  <i class="bi bi-graph-up-arrow"></i>
+                  <h3 class="text-light">Eating Disorders</h3>
+                  <p class="text-light"> Eating disorders are a common yet serious illness that people can struggle with for their entire
+                    lives.</p>
+                </div>
+              </div> <!-- End Icon Box -->
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+
+ <!-- Stats Section - Home Page -->
+   <section class="stats" id="stats">
+
+      <img src="https://img.freepik.com/premium-photo/black-gold-shapes-3d-render-minimal_68067-6784.jpg?size=626&amp;ext=jpg&amp;ga=GA1.2.1406591241.1684115342&amp;semt=ais" alt="" data-aos="fade-in" class="aos-init aos-animate">
+
+      <div class="container position-relative aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="0" class="purecounter">232</span>
+              <p>Our Team</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="15000" data-purecounter-duration="0" class="purecounter">15000</span>
+              <p>Patients treatment</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="453" data-purecounter-duration="0" class="purecounter">453</span>
+              <p>Organizations all over world</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md">
+            <div class="stats-item text-center w-1.500 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter">32</span>
+              <p>Support and community</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- End Stats Section -->
+
+
+
+
+
+    <!--books   -->
+    <section id="portfolio" class="portfolio ">
+      <!--  Section Title -->
+      <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+        <h2>Books to Illuminate Your Path</h2>
+        <p><b>Personal Growth, Page by Page:</b> Explore a diverse range of topics that cater to personal growth,
+          self-care, mindfulness, and resilience, fostering positive change from the very first chapter.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container ">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters aos-init aos-animate" data-aos="fade-up" data-aos-delay="00">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-product">Podcast</li>
+            <li data-filter=".filter-branding">Books</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="200" style="position: relative; height: 1473.47px;">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app " >
+              <img src="static/assets/img/books/book1.jpg" class="img-fluid shadow shadow" alt="">
+              <div class="portfolio-info">
+                <h4>₹ 239</h4>
+                <p>Tome Lake a noal Ann Patchett</p>
+                <a href="static/assets/img/books/book1.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" >
+              <img src="static/assets/img/books/book9.jpg" class="img-fluid shadow" alt="">
+              <div class="portfolio-info">
+                <h4>₹ 459</h4>
+                <p>Feeling Good: The New Mood Therapy</p>
+                <a href="static/assets/img/books/book9.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding ">
+              <img src="static/assets/img/books/book5.jpg" class="img-fluid shadow" style=" object-fit: cover;" alt="">
+              <div class="portfolio-info">
+                <h4>₹ 349</h4>
+                <p> Self Compassion</p>
+                <a href="static/assets/img/books/book5.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" >
+              <img src="static/assets/img/books/book2.jpg" class="img-fluid shadow" alt="">
+              <div class="portfolio-info">
+                <h4>₹ 459</h4>
+                <p>Learned Hopefulness</p>
+                <a href="static/assets/img/books/book2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product" >
+              <img src="static/assets/img/books/book8.jpg" class="img-fluid shadow" alt="">
+              <div class="portfolio-info">
+                <h4>₹ 499</h4>
+                <p>Depression-Free, Naturally</p>
+                <a href="static/assets/img/books/book8.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="static/assets/img/books/book6.jpg" class="img-fluid shadow" alt="">
+              <div class="portfolio-info">
+                <h4>₹ 669</h4>
+                <p>This is Depression</p>
+                <a href="static/assets/img/books/book6.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="static/assets/img/books/book10.jpg" class="img-fluid shadow" alt="">
+              <div class="portfolio-info">
+                <h4>₹ 199</h4>
+                <p> Cognitive Behavioral Therapy</p>
+                <a href="static/assets/img/books/book10.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="static/assets/img/books/book11.webp" class="img-fluid shadow" alt="">
+              <div class="portfolio-info">
+                <h4>₹ 269</h4>
+                <p>May be You Should Talk to Someone</p>
+                <a href="static/assets/img/books/book11.webp" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="static/assets/img/books/book3.jpg" class="img-fluid shadow" alt="">
+              <div class="portfolio-info">
+                <h4>₹ 489</h4>
+                <p>Less Stressed</p>
+                <a href="static/assets/img/books/book3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- End Portfolio Section -->
+
+
+
+
+    <!--  featurs -->
+
+
+    <section id="services" class="services">
+
+
+      <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+        <h2>Features</h2>
+        <p>We provide free mental health support and psychological counselling to all those who need it. You can call or
+          WhatsApp from anywhere in India at any hour of the day or night.</p>
+      </div>
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item d-flex">
+              <div><img src="static/assets/img/features/features1.png"></div>
+              <div>
+                <h4 class="title"><a class="stretched-link">Free 24 X 7 X 365 Mental Health
+                    Support</a></h4>
+                <p class="description">Free mental health support service is available 24X7X365 days. Don’t hesitate to
+                  reach out to us. A single conversation may help you feel much better.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item d-flex">
+              <div><img src="static/assets/img/features/features3.png"></div>
+              <div>
+                <h4 class="title"><a class="stretched-link">Skill Academy</a></h4>
+                <p class="description">Employees and Volunteers, most of who have a background in Psychology, are
+                  trained by experienced and licensed mental health professionals. It is compulsory for all our
+                  Employees and Volunteers to sit through an extensive virtual training session. This training equips
+                  them to manage crisis conversations effectively.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item d-flex">
+              <div><img src="static/assets/img/features/features2.png"></div>
+              <div>
+                <h4 class="title"><a class="stretched-link">Paid Consultation</a></h4>
+                <p class="description">Opt for one or more rounds of paid video/telephonic consultations/therapy
+                  sessions with our expert counsellors of your choice to deal with mental health concerns that need
+                  extensive, continuous support.</p>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item d-flex">
+              <div><img src="static/assets/img/features/features4.png"></div>
+              <div>
+                <h4 class="title"><a class="stretched-link">Raise Awareness &amp; Build Advocacy</a></h4>
+                <p class="description">Stigma keeps people from addressing mental health issues. We work with governments, educational institutions, civil society and media to combat the bias and build support for mental health counselling and interventions.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!--  end   features  tab  -->
+
+
+
+
+
+
+
+    <!-- blogs Section  -->
+    <section id="features" class="features">
+
+      <!--  Section Title -->
+      <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+        <h2>Blog's</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-lg-5 order-2 order-lg-1 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+            <h3>Flying Anxiety Help – 5 Tips</h3>
+            <p>
+              Are you an anxious flyer? Do you have a fear of flying? You’re not the only one who’s afraid of flying or
+              gets nervous. Lots of people get anxious about flying. I think it’s about 40 percent of the population has
+              some fear or anxiety about flying. To help you, I’ve put five tips together…
+            </p>
+            <a href="#" class="btn btn-get-started">Learn More</a>
+          </div>
+          <div class="col-lg-7 order-1 order-lg-2 d-flex align-items-center aos-init aos-animate" data-aos="zoom-out" data-aos-delay="100">
+            <div class="image-stack">
+              <img src="https://img.freepik.com/free-photo/pleased-young-pretty-female-office-worker-sitting-desk-with-office-tools-pretending-holding-something-isolated-orange_141793-73613.jpg?size=626&amp;ext=jpg&amp;ga=GA1.2.1406591241.1684115342&amp;semt=ais" alt="" class="stack-front">
+              <img src="./static/assets/img/blogs/back.jpg" alt="" class="stack-back">
+            </div>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-stretch justify-content-between features-item ">
+          <div class="col-lg-6 d-flex align-items-center features-img-bg aos-init aos-animate" data-aos="zoom-out">
+            <img src="https://img.freepik.com/free-photo/grateful-little-girl-embracing-her-grandfather-while-receiving-christmas-present-home_637285-10191.jpg?size=626&amp;ext=jpg&amp;ga=GA1.2.1406591241.1684115342&amp;semt=ais" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-5 d-flex justify-content-center flex-column aos-init aos-animate" data-aos="fade-up">
+            <h3>Best Gifts For Grandpa</h3>
+            <p>So what exactly do you get for grandpa when the man practically has everything? Our unique gift for
+              grandpa guide will help you find the perfect gift to make your life easier. Maybe something simple like a
+              coffee mug or a funny t-shirt. You’ll find some cool gadgets, fun subscriptions, practical and sentimental
+              gifts that…</p>
+           
+            <a href="#" class="btn btn-get-started align-self-start">Learn More</a>
+          </div>
+        </div><!-- blogs Item -->
+
+      </div>
+
+    </section><!-- End blogs Section -->
+
+
+
+
+
+    <!-- Call-to-action Section - Home Page -->
+   <section id="call-to-action" class="call-to-action">
+
+      <img src="./static/assets/img/cta-bg.jpg" alt="">
+
+      <div class="container">
+        <div class="row justify-content-center aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-10">
+            <div class="text-center">
+              <h3>Call To Action</h3>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupida tat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum.</p>
+              <a class="cta-btn" href="tel:+919370320475">Call To Action</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- End Call-to-action Section -->
+
+  </main>
+
+
+{% endblock %}

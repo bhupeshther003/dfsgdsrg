@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+   <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="heading-page header-text">
+        <section class="page-heading">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="text-content">
+                  <h4>Login</h4>
+                  <h2> Login for More </h2>
+                  <p class="text-light"> Welcome to our haven of support. Log in to embark on a journey towards healing <br> and empowerment. Together, let's build a path to a brighter and fulfilling future. Your well-being is our priority. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- Banner Ends Here -->
+<div class="container">
+    <div class="p-3 m-3">
+        <div class="col-lg-5 rounded mx-auto border pt-4">
+            <div class="text-center col">
+            
+                <img
+                src="https://media.istockphoto.com/id/1492811447/photo/cyber-security-and-security-password-login-online-concept-hands-typing-and-entering-username.webp?b=1&s=170667a&w=0&k=20&c=6SWxSIQDAvvco_Rx9afbzBOx-AJq6-OIAwAs3zWQSm8=" alt=""
+                class="" style="height: 250px; width:250px">
+            <hr>
+            </div>
+            <h3 class="alert alert-light rounded-pill" style="text-align:center" >Login</h3>
+            <form action="/login" method="POST">
+                
+                {% csrf_token %}
+
+                {% if error%}
+                <div class="alert alert-danger" role="alert">
+                    {{error}}
+                </div>
+                {% endif %}
+                <!-- email -->
+                <div class="form-group">
+                    <label for="">Email</label>
+                    <input required type="email" name="email" id=""
+                    value="{{values.email}}" 
+                    class=" form-control-sm form-control" placeholder="abc@gmail.com">
+                </div>
+
+
+                <!-- password -->
+                <div class="form-group">
+                    <label for="">Password</label>
+                    <input type="password" 
+                    name="password" 
+                    id=""
+                     class="form-control form-control-sm" >
+                </div>
+
+                <!--Checkme button-->
+            <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label d-grid gap-2" for="exampleCheck1">Check me out</label>
+                </div>
+                <hr>
+                <button type="submit" class="btn btn-sm btn-success col-lg-12">Login</button>
+
+             <p> create your new account <a href="signup">sign up </a></p>
+                
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

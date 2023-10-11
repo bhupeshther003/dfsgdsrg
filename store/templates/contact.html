@@ -1,0 +1,283 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+
+    <title>Contact Us</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/assets/vendor/bootstrap_contact/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="static/assets/css/fontawesome.css">
+       <link rel="stylesheet" href="static/assets/css/owl.css">
+    <link rel="stylesheet" href="static\assets\css\contact_page\stand-blog.css">
+
+
+<style>
+ 
+  .contact-us .down-contact,
+.contact-us #map {
+	margin-top: 80px;
+}
+
+.contact-us .sidebar-heading h2 {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 0.5px;
+	color: #20232e;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 15px;
+	margin-bottom: 25px;
+}
+
+.contact-us .contact-form input {
+	width: 100%;
+	height: 46px;
+	border: 1px solid #eee;
+	font-size: 13px;
+	font-weight: 500;
+	color: #7a7a7a;
+	outline: none;
+	padding: 0px 15px;
+	margin-bottom: 30px;
+}
+
+.contact-us .contact-form textarea {
+	width: 100%;
+	height: 46px;
+	border: 1px solid #eee;
+	font-size: 13px;
+	font-weight: 500;
+	color: #7a7a7a;
+	outline: none;
+	padding: 10px 15px;
+	margin-bottom: 30px;
+	height: 180px;
+	max-height: 220px;
+	max-width: 100%;
+	min-width: 160px;
+}
+
+.contact-us .contact-form input::placeholder,
+.contact-us .contact-form textarea::placeholder {
+	color: #aaa;
+}
+
+.contact-us .contact-form button {
+	display: inline-block;
+	background-color: #f48840;
+	color: #fff;
+	font-size: 13px;
+	font-weight: 500;
+	padding: 12px 20px;
+	text-transform: uppercase;
+	transition: all .3s;
+	border: none;
+	outline: none;
+}
+
+.contact-us .contact-form button:hover {
+	background-color: #fb9857;
+}
+
+.contact-us .contact-information {
+	margin-left: 30px;
+}
+
+.contact-us .contact-information ul li {
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #eee;
+}
+
+.contact-us .contact-information ul li:last-child {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	border-bottom: none;
+}
+
+.contact-us .contact-information ul li h5 {
+	font-size: 19px;
+	font-weight: 900;
+	color: #20232e;
+	line-height: 30px;
+}
+
+.contact-us .contact-information ul li span {
+	display: block;
+	font-size: 14px;
+	color: #aaa;
+	margin-top: 8px;
+}
+.contact-us .contact-information {
+		margin-left: 0px;
+		margin-top: 60px;
+	}
+  .page-heading {
+	margin: 0px 10px;
+	padding: 120px 0px;
+	text-align: left;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(static/assets/img/contact/heading-bg.jpg);
+}
+    .heading-page {
+        padding-top: 0px;
+    }
+
+    
+  </style>
+  </head>
+
+  <body>
+    <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="heading-page header-text">
+      <section class="page-heading">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="text-content">
+                <h4>contact us</h4>
+                <h2>Get in Touch</h2>
+                <p class="text-light">Reach Out, Share Your Story, and Let's Journey Towards Self-Discovery Together.Our podcast is not just a platform for knowledge sharing; it's a community of seekers, dreamers, and storytellers. We invite you to connect, open up, and join us on a shared path of self-discovery. Your story is a vital piece of this collective narrative, and through your experiences, we all grow. Let's explore the depths of human experience, inspire one another, and find solace in knowing that we are not alone on this transformative journey. Together, we'll unearth the beauty of self-discovery, forging connections that empower us to thrive, heal, and celebrate life's wonders."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Banner Ends Here -->
+<div class="container mt-5"><h1 class="text-center">Believe you can, and you're halfway there.</h1>
+   <p>This quote reflects the idea that personal growth and inner uplift often require effort and perseverance, much like
+    the effort put into maintaining effective communication and contact with others. It encourages individuals to embrace challenges as opportunities
+    for growth and improvement. It conveys the idea that one's mindset and confidence play a significant role in their journey toward self-improvement and growth.</p> <div>
+
+    <section class="contact-us">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-12">
+            <div class="down-contact">
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="sidebar-item contact-form">
+                    <div class="sidebar-heading">
+                      <h2>Send us a message</h2>
+                    </div>
+                    <div class="content">
+                      <form id="contact" action="mail/submitted" method="post">
+                        {% csrf_token %}
+                        <div class="row">
+                          <div class="col-md-6 col-sm-12">
+                            <fieldset>
+                              <input name="name" type="text" id="name" placeholder="Your name" required="">
+                            </fieldset>
+                          </div>
+                          <div class="col-md-6 col-sm-12">
+                            <fieldset>
+                              <input name="email" type="text" id="email" placeholder="Your email" required="">
+                            </fieldset>
+                          </div>
+                          <div class="col-md-12 col-sm-12">
+                            <fieldset>
+                              <input name="subject" type="text" id="subject" placeholder="Subject">
+                            </fieldset>
+                          </div>
+                          <div class="col-lg-12">
+                            <fieldset>
+                              <textarea name="user_msg" rows="6" id="message" placeholder="Your Message" required=""></textarea>
+                            </fieldset>
+                          </div>
+                          <div class="col-lg-12">
+                            <fieldset>
+                              <button type="submit" id="form-submit" class="main-button">Send Message</button>
+                            </fieldset>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="sidebar-item contact-information">
+                    <div class="sidebar-heading">
+                      <h2>contact information</h2>
+                    </div>
+                    <div class="content">
+                      <ul>
+                        <li>
+                          <h5>090-484-8080</h5>
+                          <span>PHONE NUMBER</span>
+                        </li>
+                        <li>
+                          <h5>info@company.com</h5>
+                          <span>EMAIL ADDRESS</span>
+                        </li>
+                        <li>
+                          <h5>ATI Staff CHS, Chunabhatti, Sion,
+                          	<br>Praesent laoreet 10660</h5>
+                          <span>STREET ADDRESS</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-12">
+            <div id="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.2328942611325!2d72.8794597!3d19.053495299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9d64f276d21%3A0x61fc2f00382682f4!2sNSTI%20Mumbai!5e0!3m2!1sen!2sin!4v1695021822187!5m2!1sen!2sin" width="100%" height="450px" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+
+
+</div>
+</div>
+    <!-- Bootstrap core JavaScript -->
+    <script src="static\assets\vendor\bootstrap_contact\js\bootstrap.bundle.min.js"></script>
+    <script src="static\assets\vendor\bootstrap_contact\js\jquery.min.js"></script>
+
+    <!-- Additional Scripts -->
+    <script src="static/assets/js/contact_js/custom.js"></script>
+    <script src="static/assets/js/contact_js/owl.js"></script>
+    <script src="static/assets/js/contact_js/slick.js"></script>
+    <script src="static/assets/js/contact_js/isotope.js"></script>
+    <script src="static/assets/js/contact_js/accordions.js"></script>
+
+    <script language = "text/Javascript">
+      cleared[0] = cleared[1] = cleared[2] = 0; #set a cleared flag for each field
+      function clearField(t){                   #declaring the array outside of the
+      if(! cleared[t.id]){                      #function makes it static and global
+          cleared[t.id] = 1;  #you could use true and false, but that's more typing
+          t.value='';         #with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+    </script>
+
+      </body>
+</html>
+
+{% endblock %}

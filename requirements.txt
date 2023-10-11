@@ -1,0 +1,5 @@
+django
+django-jazzmin
+psycopg2-binary
+django
+pillow

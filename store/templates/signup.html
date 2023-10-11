@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<!-- Page Content -->
+<!-- Banner Starts Here -->
+<div class="heading-page header-text">
+    <section class="page-heading">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-content">
+                        <h4>Register</h4>
+                        <h2> Create your account</h2>
+                        <p class="text-light"> Begin your transformative journey with us. Sign up to access a wealth of
+                            resources, support, <br> and guidance on your path to overcoming depression and creating a
+                            brighter, more hopeful future. Together, let's build resilience and well-being.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- Banner Ends Here -->
+
+<div class="container mt-4">
+
+    <div class="p-3 m-3">
+
+
+        <div class="col-lg-5 rounded mx-auto border pt-4">
+            <div class="text-center col">
+
+                <img src="https://media.istockphoto.com/id/1472229829/photo/online-registration-form-for-modish-form-filling.webp?b=1&s=170667a&w=0&k=20&c=Hx-0fVmT_bsXYO_MqFVSwfy8CuPGZp2tDUYJxCPwg7A="
+                    alt="" class="" style="height: 250px; width:250px">
+                <!-- <hr> -->
+                <hr>
+            </div>
+            <h3 class="alert alert-success rounded-pill" style="text-align:center">Create an Account</h3>
+            <form action="/payment" method="POST">
+
+                {% csrf_token %}
+
+                {% if error%}
+                <div class="alert alert-danger" role="alert">
+                    {{error}}
+                </div>
+                {% endif %}
+                <!-- firstname -->
+                <div class="form-group">
+                    <label for="">First Name</label>
+                    <input type="text" name="firstname" id="" value="{{values.first_name}}"
+                        class="form-control form-control-sm" placeholder="">
+                </div>
+
+                <!-- last name -->
+                <div class="form-group">
+                    <label for="">Last Name</label>
+                    <input type="text" name="lastname" id="" value="{{values.last_name}}"
+                        class="form-control form-control-sm">
+                </div>
+
+                <!-- phone -->
+                <div class="form-group">
+                    <label for="">Phone</label>
+                    <input type="text" name="phone" id="" class="form-control form-control-sm" value="{{values.phone}}"
+                        placeholder="9876543210">
+                </div>
+                <!-- email -->
+                <div class="form-group">
+                    <label for="">Email</label>
+                    <input required type="email" name="email" id="" value="{{values.email}}"
+                        class=" form-control-sm form-control" placeholder="abc@gmail.com">
+                </div>
+
+
+                <!-- password -->
+                <div class="form-group">
+                    <label for="">Password</label>
+                    <input type="password" name="password" id="" class="form-control form-control-sm">
+                </div>
+
+                <!--Checkme button-->
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label d-grid gap-2" for="exampleCheck1">Check me out</label>
+                </div>
+                <hr>
+                <button type="submit" class="btn btn-sm btn-success col-lg-12">Create an account</button>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

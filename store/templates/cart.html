@@ -31,23 +31,23 @@
 
     {% load cart %}
     {% load custom_filter %}
-    <div class="container">
-       <div class="border rounded p-4 m-4">
-            <p class="display-4 pl-4 ml-4 btn btn-success rounded-pill">Your Cart</p>
-            <hr>
+  <div class="container">
+    <div class="border rounded mt-5 mb-5">
+        <p class="display-4 pl-4 ml-4 btn btn-success rounded-pill">Your Cart</p>
+        <hr>
+        <div class="table-responsive table-responsive-sm">
             <table class="table">
                 <thead>
                     <tr>
-                        <th>Sno.</th>
-                        <th>Image</th>
-                        <th>Product</th>
-                        <th>Price</th>
-                        <th>Quantity</th>
-                        <th>Total</th>
+                        <th scope="col">Sno.</th>
+                        <th scope="col">Image</th>
+                        <th scope="col">Product</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Total</th>
                     </tr>
                 </thead>
                 <tbody>
-                    
                     {% for product in products %}
                     <tr>
                         <td>{{forloop.counter}}</td>
@@ -57,11 +57,8 @@
                         <td>{{product|cart_quantity:request.session.cart}}</td>
                         <td>{{product|price_total:request.session.cart|currency}}</td>
                     </tr>
-    
                     {% endfor %}
-                   
                 </tbody>
-    
                 <tfoot>
                     <tr>
                         <th colspan="4"></th>
@@ -70,14 +67,18 @@
                     </tr>
                 </tfoot>
             </table>
-            <hr>
-            <div class="m-3 p-3">
-                <a href="#" data-toggle="modal" data-target="#exampleModal" class="btn btn-outline-success border rounded  col-lg-3 float-right">Purchase Now</a>
-            </div>
-       </div>
+        </div>
+        <hr>
+        <div class="m-3 p-3">
+            <a href="#" data-toggle="modal" data-target="#exampleModal" class="btn btn-outline-success border rounded col-lg-3 float-right">Purchase Now</a>
+        </div>
     </div>
+</div>
+
+
     
     
+
     <!-- modal -->
     
       <!-- Modal -->

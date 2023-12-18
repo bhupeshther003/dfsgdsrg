@@ -86,16 +86,29 @@ WSGI_APPLICATION = 'inneruplift.wsgi.application'
 #     }
 # }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'railway',
+#         'USER': 'postgres',
+#         'PASSWORD': '8BbtzgpVVgi02VrtmNv1',
+#         'HOST': 'containers-us-west-75.railway.app',
+#         'PORT': '6609'
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': '8BbtzgpVVgi02VrtmNv1',
-        'HOST': 'containers-us-west-75.railway.app',
-        'PORT': '6609'
+        'PASSWORD': '2BgCEB13ee2B55efBAe1BdcFEAa44bAA',
+        'HOST': 'roundhouse.proxy.rlwy.net',
+        'PORT': '54667'
     }
 }
+
+
 
 
 
